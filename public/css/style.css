@@ -1,0 +1,234 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background: #1e243a;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+}
+
+#mainContent {
+    background: #262d46;
+    padding: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: solid #69a0f1 10px;
+    border-bottom: solid #69a0f1 10px;
+    width: 450px;
+}
+table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+ button {
+    background: #69a0f1;
+}
+
+ button:hover {
+    background: #5380bf;
+}
+
+button:active {
+    background: #69a0f1;
+}
+
+table input[type=button] {
+    background: #ee1343;
+    font-family: inherit;
+    margin-top: 7px;
+}
+
+table input[type=button]:hover {
+    background: #d6103f;
+}
+
+table input[type=button]:active {
+    background: #ee1343;
+}
+
+input[type=text], table input[type=button], button {
+    color: inherit;
+    padding: 7px;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+}
+
+input[type=text] {
+    background-color: #3c405c;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+th {
+    padding: 0 0 15px;
+}
+
+td {
+    vertical-align:top;
+}
+
+thead {
+    border-spacing: 0
+}
+thead button {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+input[type=checkbox] {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background: transparent;
+    border: solid 2px #3c405c;
+    padding: 10px;
+    outline: 0;
+    cursor: pointer;
+
+    -webkit-transition: background 1s, -webkit-transform 1s;
+    -moz-transition: background 1s, -moz-transform 1s;
+    -o-transition: background 1s, -o-transform 1s;
+    transition: background 1s, transform 1s;
+}
+
+input[type=checkbox]:hover {
+    border-color: #69a0f1;
+}
+
+input[type=checkbox]:checked {
+    background: #69a0f1;
+    -webkit-transform: rotate(450deg);
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    transform: rotate(405deg);
+}
+
+.content {
+    width: 100%;
+}
+
+thead {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+tbody {
+    display: block;
+    max-height: 350px;
+    overflow-y: auto;
+    width: 100%;
+
+}
+
+*::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    height: 4px;
+    background-color: #69a0f1;
+}
+
+.error {
+    -webkit-transition: background 1s, -webkit-transform 1s;
+    -moz-transition: background 1s, -moz-transform 1s;
+    -o-transition: background 1s, -o-transform 1s;
+    transition: background 1s, transform 1s;
+
+    -webkit-animation: shake 200ms 2 linear;
+    -o-animation: shake 200ms 2 linear;
+    animation: shake 200ms 2 linear;
+
+    background: #ee1343 !important;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        transform: translate(6px, 0);
+    }
+    50% {
+        transform: translate(-6px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
+
+@-o-keyframes shake {
+    0% {
+        transform: translate(6px, 0);
+    }
+    50% {
+        transform: translate(-6px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(6px, 0);
+    }
+    50% {
+        transform: translate(-6px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
+
+#langSelector {
+    position: absolute;
+    left: 0;
+    z-index: 44;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #69a0f1;
+    border-right: 100px solid transparent;
+}
+
+.fa-language {
+    color: #FFFFFF;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 44;
+}
